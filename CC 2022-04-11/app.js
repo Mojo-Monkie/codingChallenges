@@ -14,7 +14,12 @@
 // map through the array and multiply each element by 2. also return 
 
 function maps(arr){
+    if (arr.length === 0 || arr === undefined){
+        console.log('array is invalid')
+    }else {
     return arr.map(num => num *= 2)
+    }
 }
 
-console.log(maps([1,2,3])
+console.log(maps([1,2,3]))
+console.log(maps([]))
